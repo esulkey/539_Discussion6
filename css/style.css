@@ -67,27 +67,27 @@ h1, h2, h3{
 }
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
     margin: 0 auto;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-gap: 10px;
 }
 
 .grid div{
     /* Set border properties, padding, and background color */
-
+    border: 3px solid black;
+    border-radius: 25px;
 }
 
 .grid img{
     /* Set width, margin, and display */
+    display: block;
     width: 90%;
-    max-width: 100%;
-    height: auto;
+    margin: 0 auto;
 }
 
-@media screen and (min-width: 768 px) {
+@media screen and (min-width: 768px) {
     .grid {
         width: 90%;
         margin: 0 auto;
@@ -108,25 +108,34 @@ h1, h2, h3{
 
 .grid div:nth-child(3n+1)  {
     /* Set box shadow */
+    box-shadow: 3px 0 0 rgba(0, 0, 0, 0.3);
     }
 
 .grid div:nth-child(3n)  {
     /* Set box shadow */
+    box-shadow: -3px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
+     box-shadow: -3px 0 0 rgba(0, 0, 0, 0.3), 3px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 p + p {
      /* Set indentation */
+     text-indent: 20px;
   }
 
 p{
      /* Set margin */
+     margin-top: 20px;
 }
 
 
 .grid ul li{
     /* Set margin, line-spacing, list styling  */
+    list-style-image: url('sketchbook.png');
+    margin-left: 45px;
+    margin-bottom: 20px;
+    line-height: 1;
 }
